@@ -21,3 +21,7 @@
 }
 .result span { font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; opacity: .85; }
 .result strong { font-size: 44px; font-weight: 900; line-height: 1.1; font-variant-numeric: tabular-nums; }
+
+.toggle { display: flex; align-items: center; gap: 12px; min-height: 48px; cursor: pointer; font-weight: 500; }
+.toggle input { width: 24px; height: 24px; flex: none; margin: 0; accent-color: var(--blue); }
+.result small { font-size: 14px; font-weight: 500; opacity: .85; }
