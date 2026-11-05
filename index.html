@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Split It</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;700;800;900&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <span class="brand">AI Studio</span>
+      <h1>Split It</h1>
+      <p>Split a restaurant bill in seconds.</p>
+    </header>
+
+    <section class="card">
+      <label class="label" for="total">Bill total (€)</label>
+      <input id="total" type="number" inputmode="decimal" min="0" step="0.5" value="184.50">
+    </section>
+
+    <section class="card">
+      <span class="label">People</span>
+      <div class="stepper">
+        <button class="round" id="less" aria-label="One person less">−</button>
+        <output id="people">6</output>
+        <button class="round" id="more" aria-label="One person more">+</button>
+      </div>
+    </section>
+
+    <section class="result" aria-live="polite">
+      <span>Each person pays</span>
+      <strong id="each">€30.75</strong>
+    </section>
+
+    <footer class="app-footer">Built live at the <b>AI Studio</b> · Lift Conference 26</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
